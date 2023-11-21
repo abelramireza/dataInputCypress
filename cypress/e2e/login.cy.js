@@ -15,9 +15,9 @@ describe('Login Test', () => {
       const password = data.password;
 
       cy.visit('https://stage-service-management.coderfull.com/login');
-      cy.get('#username').type(username);
-      cy.get('#password').type(password);
-      cy.get('#login-button').click();
+      cy.get('input[placeholder*="Username"]').should('be.visible').type(username);
+      cy.get('input[placeholder*="Password"]').should('be.visible').type(password);
+      cy.get('button[type="submit"]').click();
 
       // Add assertions or continue with your test logic
     });
