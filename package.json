@@ -1,0 +1,22 @@
+{
+  "name": "coderfull-data-cypress-automation",
+  "version": "1.0.0",
+  "description": "data input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelramireza/dataInputCypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abelramireza/dataInputCypress/issues"
+  },
+  "homepage": "https://github.com/abelramireza/dataInputCypress#readme",
+  "dependencies": {
+    "cypress": "^13.5.1"
+  }
+}
