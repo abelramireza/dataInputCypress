@@ -14,8 +14,8 @@ describe("convert data to Json", () => {
   });
 });
 
-describe("Reading Data from newly created json file", function () {
-  it("Sample test case of login", function () {
+describe("Demo for talent update", function () {
+  it("Sample test case of talent data input", function () {
     cy.visit("https://stage-service-management.coderfull.com/");
     cy.fixture("xlsxData").then((data) => {
       cy.log(data.jsonData[0].data[1][0]);
