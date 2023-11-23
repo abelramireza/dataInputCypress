@@ -15,7 +15,7 @@ describe("convert data to Json", () => {
 });
 
 describe("Demo for talent update", function () {
-  it("Sample test case of talent data input", function () {
+  it(" test data of talent data input", function () {
     cy.visit("https://stage-service-management.coderfull.com/");
     cy.fixture("xlsxData").then((data) => {
       cy.log(data.jsonData[0].data[1][0]);
