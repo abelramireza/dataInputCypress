@@ -13,8 +13,8 @@ package-lock.json
 npm-debug.log
 .eslintcache
 storybook-static
-e2es/cypress/screenshots/
-e2es/cypress/screenshots/actual/*
-e2es/cypress/screenshots/diff/*
-e2es/cypress/videos/
-e2es/cypress/e2es/results/*
+cypress/screenshots/
+cypress/screenshots/actual/*
+cypress/screenshots/diff/*
+cypress/videos/
+cypress/e2es/results/*
