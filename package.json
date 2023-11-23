@@ -1,22 +1,47 @@
 {
-  "name": "coderfull-data-cypress-automation",
+  "name": "e2es",
   "version": "1.0.0",
-  "description": "data input",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abelramireza/dataInputCypress.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abelramireza/dataInputCypress/issues"
-  },
-  "homepage": "https://github.com/abelramireza/dataInputCypress#readme",
+  "description": "End to end tests for coderfull platform",
   "dependencies": {
-    "cypress": "^13.5.1"
+    "cypress-real-events": "^1.7.1",
+    "cypress-tags": "^1.1.2",
+    "cypress-visual-regression": "^3.0.0",
+    "cypress-xpath": "^1.6.2",
+    "typescript": "^4.0.3",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "cy:run": "cypress run --browser electron --headed",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:smoke:qa:chrome": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=qa --browser chrome",
+    "cy:run:smoke:stage:chrome": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=stage --browser chrome",
+    "cy:run:smoke:qa:firefox": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=qa --browser firefox",
+    "cy:run:smoke:stage:firefox": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=stage --browser firefox",
+    "cy:run:smoke:qa:edge": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=qa --browser firefox",
+    "cy:run:smoke:stage:edge": "cypress run --envnm CYPRESS_INCLUDE_TAGS=smoke,environmentName=stage --browser firefox",
+    "cy:run:regression:qa:chrome": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=qa --browser chrome",
+    "cy:run:regression:stage:chrome": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=stage --browser chrome",
+    "cy:run:regression:qa:firefox": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=qa --browser firefox",
+    "cy:run:regression:stage:firefox": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=stage --browser firefox",
+    "cy:run:regression:qa:edge": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=qa --browser firefox",
+    "cy:run:regression:stage:edge": "cypress run --env CYPRESS_INCLUDE_TAGS=smoke,environmentName=stage --browser firefox",
+    "cy:open": "cypress open",
+    "start": "../node_modules/.bin/http-server ../",
+    "build": "npm run build --prefix ../",
+    "report:merge": "mochawesome-merge cypress/reports/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+    "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports && mkdir cypress/reports/json"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.16.0",
+    "@percy/cypress": "^3.1.2",
+    "cypress": "^12.1.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-multi-reporters": "^1.6.1",
+    "mocha": "^10.1.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "node-xlsx": "^0.23.0"
   }
 }

@@ -1,0 +1,51 @@
+{
+  "baseUrl": "https://stage-service-management.coderfull.com/",
+  "endpointURL": "https://qa-service-management-backend.coderfull.com/",
+  "env": {
+    "greeting": "Hi (staging env)",
+    "environment": "Stage",
+    "talent": {
+      "common": {
+        "user": "matias.salvatierra+gabriel.cuevas",
+        "password": "pwd666stg"
+      },
+      "autOneService": {
+        "user": "abel.ramirez+aut.talent",
+        "password": "4zmHwqHEGaL4"
+      },
+      "autTwoService": {
+        "user": "abel.ramirez+aut.talent2services",
+        "password": "quLLP2WygQiY"
+      }
+    },
+    "Service Manager": {
+      "common": {
+        "user": "matias.salvatierra+fred.durst",
+        "password": "pwd666stg"
+      },
+
+      "AutoSMOneSvc": {
+        "user": "abel.ramirez+automation.SM",
+        "password": "E7GMjMMKNGuD"
+      }
+    },
+    "Engagement Manager": {
+      "common": {
+        "user": "matias.salvatierra+gaston.ruiz",
+        "password": "pwd666stg"
+      },
+      "AutoEM": {
+        "user": "abel.ramirez+automation.em",
+        "password": "dFO1n4xhQyTS"
+      }
+
+
+    },
+    "Service Admin": {
+      "common": {
+        "user": "test.service.admin",
+        "password": "pwd666stg"
+      }
+    }
+  }
+}

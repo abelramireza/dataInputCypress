@@ -1,0 +1,36 @@
+{
+  "baseUrl": "https://qa-service-management.coderfull.com/",
+  "endpointURL": "https://qa-service-management-backend.coderfull.com/",
+  "env": {
+    "greeting": "Hi (QA env)",
+    "environment": "QA",
+    "talent": {
+      "common": {
+        "user": "brian.birmingham+aristobulo.delvalle",
+        "password": "pwd666qa"
+      },
+      "autOneService": {
+        "user": "abel.ramirez+aut.talent",
+        "password": "4zmHwqHEGaL4"
+      }
+    },
+    "Service Manager": {
+      "common": {
+        "user": "matias.salvatierra+gwen.stefani",
+        "password": "pwd666qa"
+      }
+    },
+    "Engagement Manager": {
+      "common": {
+        "user": "matias.salvatierra+michael.jackson",
+        "password": "pwd666qa"
+      }
+    },
+    "Service Admin": {
+      "common": {
+        "user": "test.service.admin",
+        "password": "pwd666qa"
+      }
+    }
+  }
+}

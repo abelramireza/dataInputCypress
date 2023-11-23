@@ -1,0 +1,43 @@
+{
+  "jsonData": [
+    {
+      "name": "User",
+      "data": [
+        [
+          "username",
+          "password"
+        ],
+        [
+          "matias.salvatierra+tmstage",
+          "pwd666stg"
+        ]
+      ]
+    },
+    {
+      "name": "Talent",
+      "data": [
+        [
+          "TalentName",
+          "TalentLastName",
+          "Client",
+          "PersonalEmail",
+          "Phone"
+        ],
+        [
+          "Juan",
+          "Ramirez",
+          "Automation Regression Tests",
+          "personal123@mail.com",
+          "55555555"
+        ],
+        [
+          "Diego",
+          "Armando",
+          null,
+          "personal12345@mail.com",
+          "44444444"
+        ]
+      ]
+    }
+  ]
+}
